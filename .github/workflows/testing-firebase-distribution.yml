@@ -19,7 +19,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - uses: babbel/firebase-app-distribution.android@main
+      - uses: wzieba/Firebase-Distribution-Github-Action@master
         with:
           appId: ${{ secrets.FIREBASE_APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.SERVICE_ACCOUNT_CONTENT }}
